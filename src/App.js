@@ -13,6 +13,7 @@ function App() {
   const [apiData, setApiData] = useState([]);
   const [searchQuery, setSearchQuery] = useState(); // Default = No search query
   const [pageNumber, setPageNumber] = useState(1); //Default = Page 1
+  const [pageSize, setPageSize] = useState(10);
 
   useEffect(() => {
     // All parameters are appended to this URL.
@@ -25,6 +26,7 @@ function App() {
 
     // Add what page we are requesting to the API request.
     apiQuery = apiQuery + "&page=" + pageNumber;
+    apiQuery = apiQuery + "&pageSize=" + pageSize;
 
     // Query data from API.
     console.log("Querying: " + apiQuery);
@@ -34,17 +36,15 @@ function App() {
         // Then add response to state.
         setApiData(data);
       });
-  }, [searchQuery, pageNumber]); // Array containing which state changes that should re-reun useEffect()
+  }, [searchQuery, pageNumber, pageSize]); // Array containing which state changes that should re-reun useEffect()
 
 
   return (
     <div className="App">
       <h1>Country Lookup</h1>
-      <div className="SearchBox">
-      </div>
-      <div className="Table">
-        {<Table apiData={apiData} />}
-      </div>
+      <Search setSearchQuery={setSearchQuery} setPageNumber={setPageNumber} />
+      <Table apiData={apiData} />
+
     </div>
   );
 }
