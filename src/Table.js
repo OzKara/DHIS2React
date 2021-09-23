@@ -11,7 +11,7 @@ function Table(promp) {
     const colm = tableData[0] && Object.keys(tableData[0]);
     return (
     <>
-    <table cellPadding={0} cellSpacing={0}>
+    <table id="countries" cellPadding={0} cellSpacing={0}>
         <thead>
             <tr>
                 {tableData[0] && colm.map((heading) => <th>{heading}</th>)}
