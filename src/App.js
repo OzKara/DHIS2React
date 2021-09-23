@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Table from "./Table.js";
-import Search from "./Search";
+import Search from "./Search.js";
+import PageSize from "./PageSize.js";
 
 function App() {
   /* Create state:
@@ -44,6 +45,8 @@ function App() {
       <h1>Country Lookup</h1>
       <Search setSearchQuery={setSearchQuery} setPageNumber={setPageNumber} />
       <Table apiData={apiData} />
+
+      <PageSize setPageSize={setPageSize} />
 
     </div>
   );
