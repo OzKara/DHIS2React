@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DHIS2React/static/css/main.d9eeeea0.chunk.css",
+    "main.js": "/DHIS2React/static/js/main.64b2f556.chunk.js",
+    "main.js.map": "/DHIS2React/static/js/main.64b2f556.chunk.js.map",
+    "runtime-main.js": "/DHIS2React/static/js/runtime-main.546f732f.js",
+    "runtime-main.js.map": "/DHIS2React/static/js/runtime-main.546f732f.js.map",
+    "static/js/2.67ed5de1.chunk.js": "/DHIS2React/static/js/2.67ed5de1.chunk.js",
+    "static/js/2.67ed5de1.chunk.js.map": "/DHIS2React/static/js/2.67ed5de1.chunk.js.map",
+    "index.html": "/DHIS2React/index.html",
+    "static/css/main.d9eeeea0.chunk.css.map": "/DHIS2React/static/css/main.d9eeeea0.chunk.css.map",
+    "static/js/2.67ed5de1.chunk.js.LICENSE.txt": "/DHIS2React/static/js/2.67ed5de1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.546f732f.js",
+    "static/js/2.67ed5de1.chunk.js",
+    "static/css/main.d9eeeea0.chunk.css",
+    "static/js/main.64b2f556.chunk.js"
+  ]
+}
